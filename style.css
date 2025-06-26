@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-* {
+body {
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .hero, .footer, .header {
     background-color: #1F2937;
+    padding: 0px 64px;
+}
+
+.header {
+    display: flex;
+    padding: 24px 64px;
+    justify-content: space-between;
 }
 
 #hero-main {
@@ -19,16 +30,43 @@
     color: #E5E7EB;
 }
 
+.hero {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero img {
+    width: 400px;
+}
+
+#hero-left {
+    max-width: 450px;
+}
+
+#hero-right {
+    margin: 0;
+    max-width: 450px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6d747d;
+}
+
 .logo {
     color: #F9FaF8;
     font-size: 24px;
     font-weight: bold;
 }
 
-ul {
+ul.header-links {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 16px;
 }
 
 a {
@@ -39,7 +77,47 @@ a {
 button {
     background-color: #3882F6;
     color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 4px 24px;
+    margin: 5px 0px;
 }
+
+button:hover {
+    background-color: #3170d5;
+}
+
+
+.informations {
+    text-align: center;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.info-items {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 12px;
+    text-align: center;
+    color: #747c87;
+}
+
+.info-item {
+    max-width: 128px;
+}
+
+.info-img {
+    border: 3px solid #3882F6;
+    width: 128px;
+    height: 128px;
+    border-radius: 16px;
+}
+
 
 #info-title {
     font-size: 36px;
@@ -48,9 +126,46 @@ button {
 }
 
 .quote {
-    background-color: #E5E7EB;
+    padding: 96px 200px;
     font-size: 36px;
-    font-weight: light;
+    font-weight: 200;
     font-style: italic;
     color: #1F2937;
+    background-color: #E5E7EB;
+}
+
+.quote-auth {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.call-action {
+    background-color: #3882F6;
+    color: white;
+    padding: 32px 128px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 64px;
+    font-size: 14px;
+}
+
+
+#call-bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+button#call-signup {
+    border: 1px solid white
+}
+
+
+.footer {
+    padding: 24px;
+    color: white;
+    text-align: center;
 }
