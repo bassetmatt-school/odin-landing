@@ -17,6 +17,14 @@ body {
     display: flex;
     padding: 24px 64px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 32px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0 16px;
 }
 
 #hero-main {
@@ -34,7 +42,7 @@ body {
     padding: 64px;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 48px;
 }
 
 .hero img {
@@ -42,23 +50,20 @@ body {
 }
 
 #hero-left {
-    max-width: 450px;
+    max-width: 500px;
 }
 
 #hero-right {
     margin: 0;
     max-width: 450px;
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #6d747d;
 }
 
 .logo {
     color: #F9FaF8;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 ul.header-links {
@@ -66,7 +71,7 @@ ul.header-links {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 16px;
+    gap: 32px;
 }
 
 a {
@@ -86,8 +91,18 @@ button {
 
 button:hover {
     background-color: #3170d5;
+    cursor: pointer;
 }
 
+button#hero-signup {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: right;
+}
 
 .informations {
     text-align: center;
@@ -101,7 +116,7 @@ button:hover {
 .info-items {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 48px;
     font-size: 12px;
     text-align: center;
     color: #747c87;
@@ -112,10 +127,16 @@ button:hover {
 }
 
 .info-img {
+    overflow: hidden;
     border: 3px solid #3882F6;
     width: 128px;
     height: 128px;
     border-radius: 16px;
+}
+
+.info-img img {
+    width: 128px;
+    height: 128px;
 }
 
 
@@ -160,7 +181,8 @@ button:hover {
 
 
 button#call-signup {
-    border: 1px solid white
+    border: 1px solid white;
+    font-size: 16px;
 }
 
 
